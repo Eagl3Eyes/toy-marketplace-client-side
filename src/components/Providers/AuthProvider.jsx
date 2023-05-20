@@ -1,13 +1,18 @@
 import {GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut} from 'firebase/auth'
+
 import { createContext, useEffect, useState } from 'react'
 import app from '../../firebase/firebase.config';
 
-const auth = getAuth(app)
 
+
+
+
+const auth = getAuth(app)
 const googleProvider = new GoogleAuthProvider();
 const githubProvider = new GithubAuthProvider();
 
-export const authContext = createContext(null)
+
+export const authContext = createContext()
 
 const userRegister = (email,password) =>{
     return createUserWithEmailAndPassword(auth,email,password);

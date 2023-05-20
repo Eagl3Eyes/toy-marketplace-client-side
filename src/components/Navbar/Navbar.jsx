@@ -16,9 +16,9 @@ const Navbar = () => {
 
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 hidden" id="menu2">
                             <li ><NavLink to={'/'} className='visited:bg-[#808bfe]' onClick={() => { document.getElementById('menu2').classList.toggle('hidden') }}>Home</NavLink></li>
-                            <li><NavLink to={'/all-toys'} className='visited:bg-[#808bfe]' onClick={() => { document.getElementById('menu2').classList.toggle('hidden') }}>All Toys</NavLink></li>
-                            <li><NavLink to={'/my-toys'} className='visited:bg-[#808bfe]' onClick={() => { document.getElementById('menu2').classList.toggle('hidden') }}>My Toys</NavLink></li>
-                            <li><NavLink to={'/add-toy'} className='visited:bg-[#808bfe]' onClick={() => { document.getElementById('menu2').classList.toggle('hidden') }}>Add Toy</NavLink></li>
+                            <li><NavLink to={'/toys'} className='visited:bg-[#808bfe]' onClick={() => { document.getElementById('menu2').classList.toggle('hidden') }}>All Toys</NavLink></li>
+                            <li><NavLink to={'/mytoys'} className='visited:bg-[#808bfe]' onClick={() => { document.getElementById('menu2').classList.toggle('hidden') }}>My Toys</NavLink></li>
+                            <li><NavLink to={'/addtoy'} className='visited:bg-[#808bfe]' onClick={() => { document.getElementById('menu2').classList.toggle('hidden') }}>Add Toy</NavLink></li>
                             <li><NavLink to={'/blog'} className='visited:bg-[#808bfe]' onClick={() => { document.getElementById('menu2').classList.toggle('hidden') }}>Blog</NavLink></li>
 
                         </ul>
@@ -30,11 +30,11 @@ const Navbar = () => {
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal flex gap-10 font-bold" id='navbar'>
                         <NavLink to={'/'} className=''>Home</NavLink>
-                        <NavLink to={'/all-toys'} className=''>All Toys</NavLink>
+                        <NavLink to={'/toys'} className=''>All Toys</NavLink>
                         {user &&
                             <>
-                                <NavLink to={'/my-toys'} className=''>My Toys</NavLink>
-                                <NavLink to={'/add-toy'} className=''>Add Toy</NavLink>
+                                <NavLink to={'/mytoys'} className=''>My Toys</NavLink>
+                                <NavLink to={'/addtoy'} className=''>Add Toy</NavLink>
                             </>
                         }
 
