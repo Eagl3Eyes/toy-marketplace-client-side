@@ -1,0 +1,7 @@
+#navbar a.active {
+    text-decoration-line: underline;
+    text-underline-offset: 5px;
+    text-decoration-color: black;
+    text-decoration-style: line;
+    text-decoration-thickness: 3px;
+}
