@@ -1,7 +1,8 @@
 import {Link, NavLink, Outlet} from 'react-router-dom'
 import './navbar.css'
 import { useContext } from 'react'
-import { authContext } from '../../authentication/AuthProviders'
+import { authContext } from '../Providers/AuthProvider'
+
 
 
 export default function Navbar(){
