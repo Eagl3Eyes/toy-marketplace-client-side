@@ -129,7 +129,7 @@ function Main() {
 
 
 
-      <div className="hero" data-aos="zoom-in" data-aos-easing="ease-in-back"
+      <div className="hero" data-aos="zoom-out" data-aos-easing="ease-in-back"
         data-aos-delay="100">
         <div className="hero-content w-[90%]  flex-col lg:flex-row text-white">
 
@@ -198,7 +198,7 @@ function Main() {
           </Tabs>
         </div>
       </section>
-      
+
 
 
       <div className="hero" data-aos="zoom-in" data-aos-easing="ease-in-back"
