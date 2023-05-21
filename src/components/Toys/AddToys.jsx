@@ -48,7 +48,7 @@ export default function AddToys() {
         <div className="h-[90vh]">
 
 
-            <ToastContainer position="bottom-right"
+            <ToastContainer position="top-right"
                 autoClose={3000}
                 hideProgressBar={false}
                 newestOnTop={false}

@@ -45,7 +45,7 @@ export default function Register() {
     return (
         <div>
 
-            <ToastContainer position="bottom-right"
+            <ToastContainer position="top-right"
                 autoClose={3000}
                 hideProgressBar={false}
                 newestOnTop={false}

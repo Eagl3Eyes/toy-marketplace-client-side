@@ -115,15 +115,13 @@ function Main() {
       <div className="hero" data-aos="zoom-in" data-aos-easing="ease-in-back"
         data-aos-delay="100">
         <div className="hero-content w-[90%]  flex-col lg:flex-row text-white">
-
-          <img src="https://i.ibb.co/h89G8Fj/thor-clipart-2018-15.png" className=' max-w-sm hover:scale-[120%] transition duration-500 ease-in-out' />
           <div className="text-black text-center other bg-[url('/blobanimation.svg')] bg-no-repeat bg-center bg-contain max-[700px]:py-[8em] max-[480px]:py-[3em] py-[15em]">
-            <h1 className="text-5xl max-[730px]:text-4xl max-[650px]:text-3xl font-bold">Get your dream Action figure today</h1>
+            <h1 className="text-5xl max-[730px]:text-4xl max-[650px]:text-3xl font-bold">We have all kind<br /> of action figure!</h1>
             <div className='py-3'>
               <h1 className='font-semibold'>We deliver best of fantastic,hand-piched,age appriciate toys</h1>
             </div>
-            <button className="btn bg-[#ED1C24] border-none hover:bg-red-500">BUY NOW</button>
           </div>
+          <img src="https://cdn.shopify.com/s/files/1/0251/9220/2300/products/PowerRangersMezcoToyzOne12CollectiveMightyMorphinDeluxeBoxSet_1.png?v=1668100960" className=' max-w-sm hover:scale-[120%] transition duration-500 ease-in-out' />
         </div>
       </div>
 
@@ -150,7 +148,7 @@ function Main() {
 
       <section className='my-32'>
 
-        <h1 className='text-3xl font-bold text-center'>Gallery</h1>
+        <h1 className='text-5xl font-bold text-center'>Gallery</h1>
 
         <div className='flex gap-2 justify-center mt-20 flex-wrap px-2'>
           <div data-aos="fade-right">
