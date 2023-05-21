@@ -145,20 +145,20 @@ export default function MyToys() {
             }
 
 
-            <div className="overflow-x-auto top-0">
+            <div className="overflow-x-auto mt-6">
 
                 <table className="table w-full" id="myTable">
                     <thead>
                         <tr className="divide-y" style={{ borderBottom: '1px solid black' }}>
-                            <th className="bg-[#e9f8ff]"></th>
-                            <th className="flex gap-10 items-center bg-[#e9f8ff]">
+                            <th className="bg-slate-200"></th>
+                            <th className="flex gap-10 items-center bg-slate-200">
                                 <h1 className="text-sm">Name</h1>
 
-                                <input type="text" id="myInput" onKeyUp={() => { findInTable() }} placeholder="Search for names.." title="Type in a name" className="input input-bordered" />
+                                <input type="text" id="myInput" onKeyUp={() => { findInTable() }} placeholder="Search by Name" title="Type in a name" className="input input-bordered" />
 
                             </th>
-                            <th className="bg-[#e9f8ff]">Category</th>
-                            <th className="bg-[#e9f8ff]">
+                            <th className="bg-slate-200">Category</th>
+                            <th className="bg-slate-200">
 
                                 <div className="flex gap-3 items-center">
                                     <TbSortAscending size={20} className="cursor-pointer" onClick={() => { sortdata(1) }} />
@@ -167,10 +167,10 @@ export default function MyToys() {
                                 </div>
 
                             </th>
-                            <th className="bg-[#e9f8ff]">Available Quantity</th>
-                            <th className="bg-[#e9f8ff]">Rating</th>
-                            <th className="bg-[#e9f8ff]"></th>
-                            <th className="bg-[#e9f8ff] "></th>
+                            <th className="bg-slate-200">Available Quantity</th>
+                            <th className="bg-slate-200">Rating</th>
+                            <th className="bg-slate-200"></th>
+                            <th className="bg-slate-200"></th>
                         </tr>
                     </thead>
 

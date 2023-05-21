@@ -60,7 +60,7 @@ export default function AddToys() {
                 theme="light" />
 
 
-            <h1 className="text-center text-3xl font-bold mt-2 underline decoration-4 underline-offset-[10px]">Add Toys</h1>
+            <h1 className="text-center text-3xl mt-8 font-bold decoration-4">Add Your Toys Here</h1>
 
             <form onSubmit={handleSubmit(onSubmit)} className="m-auto my-10 w-fit">
 
@@ -78,7 +78,7 @@ export default function AddToys() {
                 </div>
 
                 <textarea  {...register("description")} placeholder="Bio" className="textarea textarea-bordered block w-full h-[16vh] my-4" ></textarea>
-                <button className="btn block w-full bg-[#808bfe] hover:bg-[#666fcb] border-none">Add Toy</button>
+                <button className="btn block w-full bg-[#ED1C24] hover:bg-red-500 border-none">Add Toy</button>
 
             </form>
 
