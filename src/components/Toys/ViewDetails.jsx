@@ -10,7 +10,7 @@ export default function ViewDetails() {
             <input type="checkbox" id="my-modal-3" className="modal-toggle" defaultChecked />
             <div className="modal">
                 <div className="modal-box relative w-fit">
-                    <label onClick={() => navigate('/all-toys')} className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                    <label onClick={() => navigate('/all-toys')} className="btn btn-sm btn-circle absolute right-2 top-2 hover:bg-[#ED1C24]">✕</label>
                     <img src={data[0].image} className="h-72 w-auto mx-auto rounded-2xl" />
 
                     <div className="flex flex-col gap-2 mt-5 font-bold">
