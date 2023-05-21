@@ -59,7 +59,7 @@ const Navbar = () => {
                     <div className="navbar-end">
                         <div>
                             {!loading && !user &&
-                                <Link to={'/login'} className="btn bg-[#808bfe] hover:bg-[#666fcb] border-none" >Sign In </Link>
+                                <Link to={'/login'} className="btn bg-[#ED1C24] hover:bg-red-500 border-none" >Sign In </Link>
                             }
 
                             {user &&
