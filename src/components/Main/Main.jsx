@@ -41,7 +41,7 @@ function Main() {
     <div className='grid grid-cols-3 gap-5 w-fit mx-auto my-10 max-[800px]:grid-cols-2 max-[650px]:grid-cols-1'>
       {
         data.map(data =>
-          <div key={data._id} className="card lg:w-72 md:w-auto bg-base-100 shadow-[0_1px_4px_rgba(0,0,0,0.16)] 
+          <div key={data._id} className="card lg:w-72 md:w-auto bg-white shadow-[0_1px_4px_rgba(0,0,0,0.16)] 
         hover:shadow-[0_3px_8px_rgba(0,0,0,0.20)] transition duration-500 ease-in-out hover:scale-[105%] ">
             <figure><img src={data.image} className='h-48 w-full' /></figure>
             <div className="card-body h-36">
@@ -55,7 +55,7 @@ function Main() {
                       readonly
                       placeholderRating={data.rating}
                       emptySymbol={<AiOutlineStar />}
-                      placeholderSymbol={<AiTwotoneStar className="text-[#808bfe]" />}
+                      placeholderSymbol={<AiTwotoneStar className="text-orange-400" />}
                       fullSymbol={<AiTwotoneStar />}
                     />
                   </span>
@@ -64,7 +64,7 @@ function Main() {
               </div>
             </div>
             <div className='p-2'>
-            <Link onClick={()=>{(user)? window.location.replace(`/all-toys/${data._id}`) :setTimeout(() => window.location.replace(`/all-toys/${data._id}`) , 2000)}}><button className="btn block w-full rounded-xl bg-[#808bfe] hover:bg-[#666fcb] border-none" 
+            <Link onClick={()=>{(user)? window.location.replace(`/all-toys/${data._id}`) :setTimeout(() => window.location.replace(`/all-toys/${data._id}`) , 2000)}}><button className="btn block w-full rounded-xl bg-[#ED1C24] hover:bg-red-500 border-none" 
           onClick={()=>{(user)? '' : toast.error('You have to log in first to view details.')}}>View Details</button></Link>
             </div>
           </div>
@@ -121,11 +121,11 @@ function Main() {
 
               <div className='relative'>
                 <h1 className="text-5xl mt-10 max-[730px]:text-4xl max-[650px]:text-3xl font-bold">Find your best  Toys for your <br /> children</h1>
-                <div className='h-[140px] w-[7px] bg-[#de2621] absolute left-[-13px] top-1'></div>
+                <div className='h-[140px] w-[7px] bg-[#808bfe] absolute left-[-13px] top-1'></div>
               </div>
 
               <div className='flex gap-4 py-6 items-center'>
-                <div className='w-10 h-10 bg-[#808bfe] rounded-full'></div>
+                <div className='w-10 h-10 bg-[] rounded-full'></div>
                 <h1 className='font-semibold'>We deliver best of fantastic,hand-piched,age appriciate toys</h1>
               </div>
               <button className="btn bg-[#808bfe] border-none hover:bg-[#6c78ff]">Get Started</button>
