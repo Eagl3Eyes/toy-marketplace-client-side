@@ -197,8 +197,8 @@ export default function MyToys() {
                                     <td></td>
                                     <td>
                                         <div className="flex items-center gap-10">
-                                            <GrDocumentUpdate className="cursor-pointer" size={23} onClick={() => updataData(data)} />
-                                            <MdDeleteSweep className="cursor-pointer" size={30} onClick={() => deletedata(data._id)} />
+                                            <GrDocumentUpdate className="cursor-pointer bg-success" size={23} onClick={() => updataData(data)} />
+                                            <MdDeleteSweep className="cursor-pointer text-[#ED1C24]" size={30} onClick={() => deletedata(data._id)} />
                                         </div>
                                     </td>
                                 </tr>
@@ -234,8 +234,8 @@ export default function MyToys() {
 
 
                     <div className="modal-action">
-                        <label htmlFor="my-modal-6" className="btn bg-[#808bfe] hover:bg-[#666fcb] border-none">Cancel</label>
-                        <button type="submit" className="btn bg-[#808bfe] hover:bg-[#666fcb] border-none">Update</button>
+                        <label htmlFor="my-modal-6" className="btn bg-[#ED1C24] hover:bg-red-500 border-none">Cancel</label>
+                        <button type="submit" className="btn bg-success hover:bg-green-500 border-none">Update</button>
                     </div>
 
                 </form>
