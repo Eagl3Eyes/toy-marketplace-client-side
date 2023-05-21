@@ -37,9 +37,9 @@ export default function AddToys() {
 
 
     const options = [
-        { value: 'Sports Car', label: 'Sports Car' },
-        { value: 'Supercar', label: 'Supercar' },
-        { value: 'Truck', label: 'Truck' },
+        { value: 'Avengers', label: 'Avengers' },
+        { value: 'Dragon Ball', label: 'Dragon Ball' },
+        { value: 'Power Rangers', label: 'Power Rangers' },
     ];
 
 

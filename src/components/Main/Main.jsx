@@ -31,7 +31,7 @@ function Main() {
   }
 
   useEffect(() => {
-    fetch(`https://toy-marketplace-server-psi.vercel.app/category/?category=Sports Car`).then(data => data.json()).then(data => setdata(data))
+    fetch(`https://toy-marketplace-server-psi.vercel.app/category/?category=Avengers`).then(data => data.json()).then(data => setdata(data))
   }, [])
 
 
@@ -112,29 +112,20 @@ function Main() {
         </div>
       </section>
 
+      <div className="hero" data-aos="zoom-in" data-aos-easing="ease-in-back"
+        data-aos-delay="100">
+        <div className="hero-content w-[90%]  flex-col lg:flex-row text-white">
 
-      <section>
-        <div className="hero min-h-screen max-w-[90%] mx-auto">
-          <div className="hero-content flex-col lg:flex-row-reverse">
-            <img src="plane.png" className=" max-w-[100%] rounded-lg hover:scale-[105%] transition duration-500 ease-in-out" />
-            <div className='text-black '>
-
-              <div className='relative'>
-                <h1 className="text-5xl mt-10 max-[730px]:text-4xl max-[650px]:text-3xl font-bold">Find your best  Toys for your <br /> children</h1>
-                <div className='h-[140px] w-[7px] bg-[#808bfe] absolute left-[-13px] top-1'></div>
-              </div>
-
-              <div className='flex gap-4 py-6 items-center'>
-                <div className='w-10 h-10 bg-[] rounded-full'></div>
-                <h1 className='font-semibold'>We deliver best of fantastic,hand-piched,age appriciate toys</h1>
-              </div>
-              <button className="btn bg-[#808bfe] border-none hover:bg-[#6c78ff]">Get Started</button>
+          <img src="https://i.ibb.co/h89G8Fj/thor-clipart-2018-15.png" className=' max-w-sm hover:scale-[120%] transition duration-500 ease-in-out' />
+          <div className="text-black text-center other bg-[url('/blobanimation.svg')] bg-no-repeat bg-center bg-contain max-[700px]:py-[8em] max-[480px]:py-[3em] py-[15em]">
+            <h1 className="text-5xl max-[730px]:text-4xl max-[650px]:text-3xl font-bold">Get your dream Action figure today</h1>
+            <div className='py-3'>
+              <h1 className='font-semibold'>We deliver best of fantastic,hand-piched,age appriciate toys</h1>
             </div>
+            <button className="btn bg-[#ED1C24] border-none hover:bg-red-500">BUY NOW</button>
           </div>
         </div>
-      </section>
-
-
+      </div>
 
 
 
@@ -142,27 +133,55 @@ function Main() {
         data-aos-delay="100">
         <div className="hero-content w-[90%]  flex-col lg:flex-row text-white">
 
-          <img src="/updated.png" className='max-w-full hover:scale-[120%] transition duration-500 ease-in-out' />
+          <img src="https://i.ibb.co/h89G8Fj/thor-clipart-2018-15.png" className=' max-w-sm hover:scale-[120%] transition duration-500 ease-in-out' />
           <div className="text-black text-center other bg-[url('/blobanimation.svg')] bg-no-repeat bg-center bg-contain max-[700px]:py-[8em] max-[480px]:py-[3em] py-[15em]">
-            <h1 className="text-5xl max-[730px]:text-4xl max-[650px]:text-3xl font-bold">Get your dream car toy today</h1>
+            <h1 className="text-5xl max-[730px]:text-4xl max-[650px]:text-3xl font-bold">Get your dream Action figure today</h1>
             <div className='py-3'>
-              <h1 className='font-semibold'>We deliver best of fantastic,hand-piched,age appriciate toys</h1>
+              <h1 className='font-semibold'>We offer the finest selection of incredible toys that have been carefully chosen, ensuring they are perfect for each age group.</h1>
             </div>
-            <button className="btn bg-[#808bfe] border-none hover:bg-[#6c78ff]">Get Started</button>
+            
+            <Link to={'/all-toys'} className="btn bg-[#ED1C24] border-none hover:bg-red-500">BUY NOW</Link>
           </div>
         </div>
       </div>
 
 
 
+
+      <section className='my-32'>
+
+        <h1 className='text-3xl font-bold text-center'>Gallery</h1>
+
+        <div className='flex gap-2 justify-center mt-20 flex-wrap px-2'>
+          <div data-aos="fade-right">
+          <img src="https://c1.wallpaperflare.com/preview/64/174/548/toy-figures-shanghai-street.jpg" className='h-[450px] rounded-2xl shadow-[0px_0px_8px_2px_rgba(0,0,0,0.30)] hover:scale-[102%] transition duration-500 ease-in-out max-[400px]:max-h-[300px]'/>
+          </div>
+          <div className='grid grid-cols-2 w-fit gap-3 max-[400px]:max-w-[300px] max-w-[470px]' data-aos="fade-left">
+            <img src="https://media.karousell.com/media/photos/products/2020/11/5/marvel_legends_worthy_captain__1604566376_419c0741_progressive.jpg" className='h-[218px] rounded-tl-2xl shadow-[0px_0px_8px_2px_rgba(0,0,0,0.30)] hover:scale-[105%] transition duration-500 ease-in-out max-[400px]:max-h-[180px]' />
+            <img src="https://i.pinimg.com/564x/df/6b/0b/df6b0b927966a662d1de020e791dacd1.jpg" className='h-[218px] rounded-tr-2xl shadow-[0px_0px_8px_2px_rgba(0,0,0,0.30)] hover:scale-[105%] transition duration-500 ease-in-out max-[400px]:max-h-[180px]' />
+            <img src="https://i.ebayimg.com/images/g/KrkAAOSwqa9iIAG6/s-l1600.jpg" className='h-[218px] rounded-bl-2xl shadow-[0px_0px_8px_2px_rgba(0,0,0,0.30)] hover:scale-[105%] transition duration-500 ease-in-out max-[400px]:max-h-[180px]' />
+            <img src="https://images.alphacoders.com/705/705099.jpg" className='h-[218px] rounded-br-2xl shadow-[0px_0px_8px_2px_rgba(0,0,0,0.30)] hover:scale-[105%] transition duration-500 ease-in-out max-[400px]:max-h-[180px]' />
+
+          </div>
+        </div>
+
+
+      </section>
+
+
+
+
+
+
+
       <section >
-        <h1 className='text-5xl font-bold text-center mt-44 text-[#808bfe]'>Products Categories</h1>
+        <h1 className='text-5xl font-bold text-center mt-44'>Products Categories</h1>
         <div className='text-center mx-20 max-[650px]:mx-2 mt-16'>
           <Tabs>
             <TabList className='font-bold '>
-              <Tab onClick={() => { tabdata('Sports Car') }}>Sports Cars</Tab>
-              <Tab onClick={() => { tabdata('Supercar') }}>Super Cars</Tab>
-              <Tab onClick={() => { tabdata('Truck') }}>Trucks</Tab>
+              <Tab onClick={() => { tabdata('Avengers') }}>Avengers</Tab>
+              <Tab onClick={() => { tabdata('Dragon Ball') }}>Dragon Ball</Tab>
+              <Tab onClick={() => { tabdata('Power Rangers') }}>Power Rangers</Tab>
             </TabList>
 
             <TabPanel>
