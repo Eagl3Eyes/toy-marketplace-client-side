@@ -28,22 +28,22 @@ const router = createBrowserRouter([
         element: <Main></Main>
       },
       {
-        path: '/toys',
+        path: '/all-toys',
         element: <Toys></Toys>,
         children: [
           {
-            path: '/toys/:id',
+            path: '/all-toys/:id',
             element: <PrivateRoute><ViewDetails path={'/login'} data={true}></ViewDetails></PrivateRoute>,
-            loader: ({ params }) => fetch(`https://cute-gold-lemming-sari.cyclic.app/all-toys/${params.id}`)
+            loader: ({ params }) => fetch(`https://toy-marketplace-server-psi.vercel.app/all-toys/${params.id}`)
           }
         ]
       },
       {
-        path: '/mytoys',
+        path: '/my-toys',
         element: <PrivateRoute><MyToys path={'/login'} data={true}></MyToys></PrivateRoute>
       },
       {
-        path: '/addtoy',
+        path: '/add-toy',
         element: <PrivateRoute><AddToys path={'/login'} data={true}></AddToys></PrivateRoute>
       },
       {
@@ -64,7 +64,9 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <AuthProviders>
-      <RouterProvider router={router} />
+      <div className='bg-[#e9f8ff]'>
+        <RouterProvider router={router} />
+      </div>
     </AuthProviders>
   </React.StrictMode>,
 )

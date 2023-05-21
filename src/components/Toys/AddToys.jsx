@@ -24,7 +24,7 @@ export default function AddToys() {
         data.category = selectedOption?.value;
         data.sellerName = user?.displayName;
         data.sellerEmail = user?.email;
-        fetch('https://cute-gold-lemming-sari.cyclic.app/addtoys', {
+        fetch('https://toy-marketplace-server-psi.vercel.app/addtoys', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(data)

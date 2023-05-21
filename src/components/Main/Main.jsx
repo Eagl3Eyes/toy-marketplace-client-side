@@ -27,11 +27,11 @@ function Main() {
   TitleHooks('Home')
 
   const tabdata = (data) => {
-    fetch(`https://cute-gold-lemming-sari.cyclic.app/category/?category=${data}`).then(data => data.json()).then(data => setdata(data))
+    fetch(`https://toy-marketplace-server-psi.vercel.app/category/?category=${data}`).then(data => data.json()).then(data => setdata(data))
   }
 
   useEffect(() => {
-    fetch(`https://cute-gold-lemming-sari.cyclic.app/category/?category=Sports Car`).then(data => data.json()).then(data => setdata(data))
+    fetch(`https://toy-marketplace-server-psi.vercel.app/category/?category=Sports Car`).then(data => data.json()).then(data => setdata(data))
   }, [])
 
 
@@ -64,8 +64,8 @@ function Main() {
               </div>
             </div>
             <div className='p-2'>
-              <Link onClick={() => { (user) ? window.location.replace(`/toys/${data._id}`) : setTimeout(() => window.location.replace(`/toys/${data._id}`), 2000) }}><button className="btn block w-full rounded-xl bg-[#808bfe] hover:bg-[#666fcb] border-none"
-                onClick={() => { (user) ? '' : toast.error('You have to log in first to view details.') }}>View Details</button></Link>
+            <Link onClick={()=>{(user)? window.location.replace(`/all-toys/${data._id}`) :setTimeout(() => window.location.replace(`/all-toys/${data._id}`) , 2000)}}><button className="btn block w-full rounded-xl bg-[#808bfe] hover:bg-[#666fcb] border-none" 
+          onClick={()=>{(user)? '' : toast.error('You have to log in first to view details.')}}>View Details</button></Link>
             </div>
           </div>
         )
@@ -156,7 +156,7 @@ function Main() {
 
 
       <section >
-        <h1 className='text-2xl font-bold text-center mt-44 text-[#808bfe] underline decoration-4 underline-offset-[10px]'>Shop by category</h1>
+        <h1 className='text-5xl font-bold text-center mt-44 text-[#808bfe]'>Products Categories</h1>
         <div className='text-center mx-20 max-[650px]:mx-2 mt-16'>
           <Tabs>
             <TabList className='font-bold '>

@@ -15,7 +15,7 @@ export default function Toys() {
 
 
     // const loadMore = () => {
-    //     fetch('https://cute-gold-lemming-sari.cyclic.app/', {
+    //     fetch('https://toy-marketplace-server-psi.vercel.app/', {
     //         method: "POST",
     //         headers: { 'content-type': 'application/json' },
     //         body: JSON.stringify({ 'value': '10' })
@@ -44,7 +44,7 @@ export default function Toys() {
     }
 
     useEffect(() => {
-        fetch('https://cute-gold-lemming-sari.cyclic.app/').then(data => data.json()).then(data => setToys(data))
+        fetch('https://toy-marketplace-server-psi.vercel.app/').then(data => data.json()).then(data => setToys(data))
     }, [])
     return (
         <div>
@@ -95,7 +95,7 @@ export default function Toys() {
                                         <td>{data.price}</td>
                                         <td className="pl-20">{data.quantity}</td>
                                         <td>
-                                            <Link to={`/toys/${data._id}`} className="btn">View Details</Link>
+                                            <Link to={`/all-toys/${data._id}`} className="btn">View Details</Link>
                                         </td>
                                     </tr>
                                 )
