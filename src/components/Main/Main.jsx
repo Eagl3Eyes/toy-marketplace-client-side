@@ -47,7 +47,7 @@ function Main() {
             <div className="card-body h-36">
               <h2 className="card-title">{data.name}</h2>
               <div className="text-left">
-                <p>Price : {data.price}</p>
+                <p>Price : {data.price}$</p>
                 <div className="flex mt-2">
                   <h1>Rating :</h1>
                   <span className="mt-1 pl-1">

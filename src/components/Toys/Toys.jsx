@@ -47,27 +47,27 @@ export default function Toys() {
         fetch('https://toy-marketplace-server-psi.vercel.app/').then(data => data.json()).then(data => setToys(data))
     }, [])
     return (
-        <div>
+        <div className="mt-6">
             <div className="min-h-[90vh]">
 
                 <Outlet />
 
                 <div className="overflow-x-auto">
-                    <table className="table w-full" id="myTable">
+                    <table className="table w-full bg-slate-200" id="myTable">
                         <thead>
                             <tr className="divide-y" style={{ borderBottom: '1px solid black' }}>
-                                <th className="bg-[#e9f8ff]"></th>
-                                <th className="flex gap-10 items-center bg-[#e9f8ff]">
+                                <th className="bg-slate-200"></th>
+                                <th className="flex gap-10 items-center bg-slate-200">
                                     <h1 className="text-sm ">Name</h1>
 
                                     <input type="text" id="myInput" onKeyUp={() => { findInTable() }} placeholder="Search for names.." title="Type in a name" className="input input-bordered " />
 
                                 </th>
-                                <th className="bg-[#e9f8ff]">Seller</th>
-                                <th className="bg-[#e9f8ff]">Category</th>
-                                <th className="bg-[#e9f8ff]">Price</th>
-                                <th className="bg-[#e9f8ff]">Available Quantity</th>
-                                <th className="bg-[#e9f8ff]">Details</th>
+                                <th className="bg-slate-200">Seller</th>
+                                <th className="bg-slate-200">Category</th>
+                                <th className="bg-slate-200">Price</th>
+                                <th className="bg-slate-200">Available Quantity</th>
+                                <th className="bg-slate-200">Details</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -95,7 +95,7 @@ export default function Toys() {
                                         <td>{data.price}</td>
                                         <td className="pl-20">{data.quantity}</td>
                                         <td>
-                                            <Link to={`/all-toys/${data._id}`} className="btn">View Details</Link>
+                                            <Link to={`/all-toys/${data._id}`} className="btn bg-[#ED1C24] hover:bg-red-500">View Details</Link>
                                         </td>
                                     </tr>
                                 )
