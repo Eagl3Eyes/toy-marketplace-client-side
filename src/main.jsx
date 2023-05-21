@@ -6,7 +6,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Navbar from './components/Navbar/Navbar';
+import App from './App';
 import Main from './components/Main/Main';
 import PrivateRoute from './components/PrivateRoutes/PrivateRoute';
 import Login from './components/Login/Login';
@@ -21,7 +21,7 @@ import AuthProviders from './components/Providers/AuthProvider';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Navbar></Navbar>,
+    element: <App></App>,
     children: [
       {
         path: '/',
