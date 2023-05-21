@@ -64,8 +64,8 @@ function Main() {
               </div>
             </div>
             <div className='p-2'>
-            <Link onClick={()=>{(user)? window.location.replace(`/all-toys/${data._id}`) :setTimeout(() => window.location.replace(`/all-toys/${data._id}`) , 2000)}}><button className="btn block w-full rounded-xl bg-[#ED1C24] hover:bg-red-500 border-none" 
-          onClick={()=>{(user)? '' : toast.error('You have to log in first to view details.')}}>View Details</button></Link>
+              <Link onClick={() => { (user) ? window.location.replace(`/all-toys/${data._id}`) : setTimeout(() => window.location.replace(`/all-toys/${data._id}`), 2000) }}><button className="btn block w-full rounded-xl bg-[#ED1C24] hover:bg-red-500 border-none"
+                onClick={() => { (user) ? '' : toast.error('You have to log in first to view details.') }}>View Details</button></Link>
             </div>
           </div>
         )
@@ -139,7 +139,7 @@ function Main() {
             <div className='py-3'>
               <h1 className='font-semibold'>We offer the finest selection of incredible toys that have been carefully chosen, ensuring they are perfect for each age group.</h1>
             </div>
-            
+
             <Link to={'/all-toys'} className="btn bg-[#ED1C24] border-none hover:bg-red-500">BUY NOW</Link>
           </div>
         </div>
@@ -154,7 +154,7 @@ function Main() {
 
         <div className='flex gap-2 justify-center mt-20 flex-wrap px-2'>
           <div data-aos="fade-right">
-          <img src="https://c1.wallpaperflare.com/preview/64/174/548/toy-figures-shanghai-street.jpg" className='h-[450px] rounded-2xl shadow-[0px_0px_8px_2px_rgba(0,0,0,0.30)] hover:scale-[102%] transition duration-500 ease-in-out max-[400px]:max-h-[300px]'/>
+            <img src="https://c1.wallpaperflare.com/preview/64/174/548/toy-figures-shanghai-street.jpg" className='h-[450px] rounded-2xl shadow-[0px_0px_8px_2px_rgba(0,0,0,0.30)] hover:scale-[102%] transition duration-500 ease-in-out max-[400px]:max-h-[300px]' />
           </div>
           <div className='grid grid-cols-2 w-fit gap-3 max-[400px]:max-w-[300px] max-w-[470px]' data-aos="fade-left">
             <img src="https://media.karousell.com/media/photos/products/2020/11/5/marvel_legends_worthy_captain__1604566376_419c0741_progressive.jpg" className='h-[218px] rounded-tl-2xl shadow-[0px_0px_8px_2px_rgba(0,0,0,0.30)] hover:scale-[105%] transition duration-500 ease-in-out max-[400px]:max-h-[180px]' />
@@ -198,43 +198,40 @@ function Main() {
           </Tabs>
         </div>
       </section>
+      
 
 
-      <section>
-        <div className="max-w-full px-56 mb-10 mt-32 m-auto max-[1080px]:px-8">
-          <div
-            className="w-full shadow-[0_2px_8px_0px_rgba(99,99,99,0.2)] hover:scale-[105%] transition duration-500 ease-in-out"
-            style={{
-              backgroundImage: `url("https://i.ibb.co/X5QVysF/newsletter-background.webp")`, borderRadius: '20px'
-            }}
-          >
+      <div className="hero" data-aos="zoom-in" data-aos-easing="ease-in-back"
+        data-aos-delay="100">
+        <div className="hero-content w-[90%]  flex-col lg:flex-row text-white gap-10">
 
-            <div className="hero-content text-center text-neutral-content max-w-full">
-              <div className="max-w-md">
-
-                <h1 className="text-4xl text-[#808bfe] font-bold mb-8">
-                  Subscribe Newsletter
-                </h1>
-
+          <img src="https://memberful.com/images/newsletters/newsletters-banner-9dcd3a3c.jpg" className=' max-w-sm hover:scale-[120%] transition duration-500 ease-in-out' />
+          <div className="text-black text-center other bg-[url('/blobanimation.svg')] bg-no-repeat bg-center bg-contain max-[700px]:py-[8em] max-[480px]:py-[3em] py-[15em]">
+            <h1 className="text-5xl max-[730px]:text-4xl max-[650px]:text-3xl font-bold">Subscribe Newsletter</h1>
+            <div className='py-3'>
+              <h1 className='font-semibold'>
                 <div>
                   <div className="w-80 m-auto max-[400px]:px-5">
                     <div className="relative">
                       <input
                         type="text"
                         placeholder="Enter your email here"
-                        className="input rounded-[30px] w-full py-8 "
+                        className="input bg-slate-200 rounded-[30px] w-full py-8 "
                       />
-                      <button className="btn btn-ghost bg-[#808bfe] hover:bg-[#666fcb] absolute top-2 right-2 rounded-[30px]">
+                      <button className="btn btn-ghost text-white bg-[#ED1C24] hover:bg-red-500 absolute top-2 right-2 rounded-[30px]">
                         Subscribe
                       </button>
                     </div>
                   </div>
                 </div>
-              </div>
+              </h1>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+
+
+
 
     </div>
   )
